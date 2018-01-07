@@ -1,0 +1,6 @@
+data/match_data/*/**
+data/pickled_stan_models/*.pkl
+data/samples/*.csv
+*.pyc
+python/.ipynb_checkpoints/
+*.DS_Store
