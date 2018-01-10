@@ -1,4 +1,4 @@
-% Created 2018-01-09 Tue 16:57
+% Created 2018-01-10 Wed 02:30
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -36,7 +36,7 @@
 \begin{document}
 
 \section*{Who is good at Test cricket?}
-\label{sec:orgdb14a05}
+\label{sec:org46c8787}
 Cricket fans often debate who is the best player, and these arguments
 are pretty hard to settle as matches take so long, have so many
 contributing factors, are pretty infrequent and involve a range of
@@ -47,7 +47,7 @@ Below I use a similar approach to the one we currently use for
 football to try and see which players are good at Test cricket.
 
 \subsection*{Wait, what is `Test cricket'?}
-\label{sec:orgc29a04f}
+\label{sec:org8bcd398}
 Cricket is a game with a well-deserved reputation for baffling
 terminology, especially in its 5-day 'Test' format. For our purposes
 the following description will more or less suffice:
@@ -62,14 +62,14 @@ they are out).
 \end{itemize}
 
 \subsection*{Data}
-\label{sec:org9a6a10b}
+\label{sec:org17c6ed0}
 I downloaded data recording the outcomes of 809592 balls from 402 male Test
 matches from the website \href{https://cricsheet.org/downloads/\#experimental}{cricsheet}, and condensed it into a table indicating how
 many runs, balls and wickets happened for each bolwer/batter/innings
 combination.
 
 \subsection*{Model}
-\label{sec:orgc35be06}
+\label{sec:orga7eba4f}
 I used the following generalised linear models to describe the total number of
 runs and wickets for a given combination \(c\) of bowler, batter and innings
 
@@ -114,7 +114,7 @@ which suggest that the two dimensions are more or less uncorrelated
 for both bowlers and batters.
 
 \subsection*{Model checking}
-\label{sec:orgd1018a5}
+\label{sec:orge6cf399}
 I generated simulated runs and wickets for each bowler/batter/innings
 combination and compared these with the observed values, with the following
 results:
@@ -144,7 +144,7 @@ Overall there seems to be room for improvement, but the model fits the
 data well enough to make the results interesting.
 
 \subsection*{Results}
-\label{sec:org7f5f4df}
+\label{sec:org258c64a}
 I made two charts - one plotting the posterior means of both abilities
 for all players, with unusual players highlighted, and another with a
 more detailed look at the players with the best wicket abilities.
@@ -165,7 +165,7 @@ bowlers who would probably do a lot of bowling when the ball is
 relatively new - this suggests a natural way to extend the model.
 
 \subsection*{Limitations}
-\label{sec:org714200c}
+\label{sec:org6047ce6}
 I think this model works fairly well, but there are quite a few
 limitations and extensions that would be interesting to investigate:
 
