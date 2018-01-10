@@ -1,5 +1,5 @@
-A notebook and supporting functions for fetching and investigating
-data about test cricket.
+A notebook, report and supporting functions for fetching and
+investigating data about test cricket.
 
 * Required Python libraries
 
